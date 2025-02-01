@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuphoriaCasus", "EuphoriaCasus\EuphoriaCasus.csproj", "{68E2F9B2-08FB-4B93-9EA5-3CC64B79DE4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68E2F9B2-08FB-4B93-9EA5-3CC64B79DE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E2F9B2-08FB-4B93-9EA5-3CC64B79DE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E2F9B2-08FB-4B93-9EA5-3CC64B79DE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E2F9B2-08FB-4B93-9EA5-3CC64B79DE4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAC68DEC-25FB-4935-A498-C7682A5BDEB4}
+	EndGlobalSection
+EndGlobal

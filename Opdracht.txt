@@ -1,0 +1,9 @@
+De opdracht:
+Taxibedrijf De Kruik (standplaats Wilhelminapark) heeft een drietal taxi's en moet vandaag een tiental reizigers van en naar de highlights van Tilburg halen/brengen. De planner moet zorgen dat de reisbehoefte zo efficiënt mogelijk wordt uitgevoerd en stuurt de taxi’s op het juiste moment naar de juiste locatie. 
+Vraag 1. Je kunt de efficiëntie op verschillende manier meten en nastreven:
+•        Zo weinig mogelijk taxi-kilometers
+•        Zo weinig mogelijk totale reistijd
+•        Zo klein mogelijke afwijking van de gewenste vertrek- of aankomsttijd
+Weet je nog meer manieren? En zijn deze in het belang van de reiziger of van het taxibedrijf?
+Vraag 2. Maak XML-files van de gegevens uit de casus.xlsx Excel-lijst. Maak een C# applicatie welke de XML inleest en netjes in objecten stopt. De app mag in elk framework worden geschreven, het gaat immers om je creativiteit/de “waarom” achter keuzes. 
+Vraag 3. Het taxibedrijf stuurt een taxi eropuit om even langs alle highlights te rijden. De volgorde maakt daarbij niet uit, maar de taxi begint bij Wilhelminapark en komt daar na afloop weer terug. Breid de app uit met een functie die de meest optimale route berekent (zo weinig mogelijk taxi-kilometers). Geef de kortste route terug aan de gebruiker.

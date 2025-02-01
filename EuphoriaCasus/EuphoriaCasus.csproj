@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Program.cs" />
+    <Resource Include="Resources\Broekhovenseweg.xml" />
+    <Resource Include="Resources\De Zeven Zonden.xml" />
+    <Resource Include="Resources\Hoge Wal.xml" />
+    <Resource Include="Resources\Lieve Vrouweplein.xml" />
+    <Resource Include="Resources\McDonalds.xml" />
+    <Resource Include="Resources\NS-Plein.xml" />
+    <Resource Include="Resources\Piushaven.xml" />
+    <Resource Include="Resources\Regge.xml" />
+    <Resource Include="Resources\Vlashoflaan.xml" />
+    <Resource Include="Resources\Wilhelminapark.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Resources\Broekhovenseweg.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\De Zeven Zonden.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Hoge Wal.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Lieve Vrouweplein.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\McDonalds.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\NS-Plein.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Piushaven.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Regge.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Vlashoflaan.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Wilhelminapark.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

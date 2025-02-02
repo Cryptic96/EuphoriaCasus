@@ -8,6 +8,11 @@ namespace EuphoriaCasus
     {
         private static readonly OsrmService _osrmService = new();
 
+        /// <summary>
+        /// Update the distance and time needed to travel with the OSRM api.
+        /// </summary>
+        /// <param name="locations">The list of locations which are updated.</param>
+        /// <returns>The updated locations list.</returns>
         public static async Task<List<Location>> UpdateDistancesAsync(List<Location> locations)
         {
             // Clear existing distances

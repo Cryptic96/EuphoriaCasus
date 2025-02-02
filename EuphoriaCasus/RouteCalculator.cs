@@ -1,12 +1,22 @@
 ﻿using EuphoriaCasus.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace EuphoriaCasus
 {
     public class RouteCalculator
     {
+        /// <summary>
+        /// Calculate the best route to drive.
+        /// This function first calculates all possible routes with a given set of locations and a start location.
+        /// After generating a list of lists with all possible routes, we compare all.
+        /// When a distance is shorter than the previous route, this route is chosen as the new route.
+        /// When a distance is the same, the time needed to drive is taken in consideration.
+        /// </summary>
+        /// <param name="startLocation">The start location, which is also the end location.</param>
+        /// <param name="locations">A list of all other locations for the route.</param>
+        /// <returns>A model containing the best route and the total amount of Km and time needed
+        /// to drive this route.</returns>
         public static BestRoute CalculateBestRoute(Location startLocation, List<Location> locations)
         {
             var otherLocations = locations.ToList();
@@ -57,6 +67,9 @@ namespace EuphoriaCasus
         /// [ {Total Routes} = (n - 1)! ]
         /// Where(n ) is the total number of locations. For 10 locations:
         /// [ {Total Routes} = (10 - 1)! = 9! = 362880 ]
+        /// 
+        /// This formula is used to calculate. Only in this case, 
+        /// the given list is already missing the start location.
         /// </summary>
         private static List<List<T>> GetPermutations<T>(List<T> list, int length)
         {

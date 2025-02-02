@@ -9,15 +9,15 @@ using System.Xml.Serialization;
 
 namespace EuphoriaCasus
 {
-    class Program
+    internal class Program
     {
-        static async Task Main(string[] args)
+        private static async Task Main(string[] args)
         {
             var resourceDir = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
             var locationPaths = Directory.GetFiles(resourceDir);
             var locations = new List<Location>();
-            
-            foreach(var locationString in locationPaths)
+
+            foreach (var locationString in locationPaths)
             {
                 var serializer = new XmlSerializer(typeof(Location));
                 Location location;
@@ -32,12 +32,16 @@ namespace EuphoriaCasus
             Console.WriteLine("------------Best Route - Offline Data-------------");
             CalculateRoute([.. locations]);
 
-            // Update location distances with live data.
+            // Update location distances with live data from OSRM.
             Console.WriteLine("-------------Best Route - Live Data---------------");
             locations = (await LocationUpdater.UpdateDistancesAsync([.. locations]));
             CalculateRoute([.. locations]);
         }
 
+        /// <summary>
+        /// Calculate the Best route based on a set of locations.
+        /// </summary>
+        /// <param name="locations">The list of locations used to calculate the best route.</param>
         private static void CalculateRoute(List<Location> locations)
         {
             var start = locations.Single(l => l.Id == 1);

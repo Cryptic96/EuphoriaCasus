@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace EuphoriaCasus
+namespace EuphoriaCasus.Services
 {
     public class OsrmService
     {

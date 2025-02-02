@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace EuphoriaCasus
+namespace EuphoriaCasus.Services
 {
     public class RouteCalculator
     {
@@ -51,7 +51,7 @@ namespace EuphoriaCasus
                 totalTime += returnDistanceInfo.Seconds;
 
                 // Check if this route is better than the best found so far
-                if (totalDistance < shortestDistance || (totalDistance == shortestDistance && totalTime < fastestTime))
+                if (totalDistance < shortestDistance || totalDistance == shortestDistance && totalTime < fastestTime)
                 {
                     shortestDistance = totalDistance;
                     fastestTime = totalTime;

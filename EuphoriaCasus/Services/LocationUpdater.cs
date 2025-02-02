@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace EuphoriaCasus
+namespace EuphoriaCasus.Services
 {
     public static class LocationUpdater
     {
